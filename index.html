@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VĂN ĐẠT & THANH TRÚC - Lời Mời Đám Cưới</title>
+
+    <meta property="og:image" content="images/anh-chinh.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="introLoader" class="intro-loader">
+        <div class="intro-content">
+            <p class="intro-sub">Wedding Invitation</p>
+            <h1 class="intro-title">Văn Đạt & Thanh Trúc</h1>
+
+            <button id="openInviteBtn" class="open-invite-btn">
+                <i class="fa-solid fa-heart me-2"></i>
+                Mở Thiệp
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-wrapper">
+
+        <section class="hero-section text-center">
+
+            <div class="hero-img-container">
+                <img src="images/anh-chinh.jpg" alt="Ảnh cưới chính" class="hero-img">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-names-box-modern animate-fade-up">
+                <span class="wedding-badge">THE WEDDING OF</span>
+                <div class="couple-names-wrap">
+                    <h1 class="script-font-premium">Văn Đạt</h1>
+                    <div class="heart-separator">
+                        <span class="line-left"></span>
+                        <i class="fas fa-heart pulse-heart"></i>
+                        <span class="line-right"></span>
+                    </div>
+                    <h1 class="script-font-premium">Thanh Trúc</h1>
+                </div>
+            </div>
+
+            <div class="hero-info-card-modern animate-fade-up delay-1">
+                <h2 class="title-invite-modern">LỄ NẠP TÀI (NHÀ GÁI)</h2>
+                <div class="divider-modern"></div>
+                <p class="time-main-modern">09 Giờ 05 phút - THỨ TƯ</p>
+                <p class="date-main-modern">21 . 10 . 2026</p>
+
+                <div class="divider-modern my-3"></div>
+
+                <h2 class="title-invite-modern">LỄ THÀNH HÔN (NHÀ TRAI)</h2>
+                <p class="time-main-modern">CHỦ NHẬT - 09 : 30</p>
+                <p class="date-main-modern">25 . 10 . 2026</p>
+            </div>
+        </section>
+
+        <section class="countdown-section text-center py-4 scroll-animate" data-animate="fade-up">
+            <p class="countdown-title">Cùng đếm ngược thời gian hạnh phúc này</p>
+            <div class="d-flex justify-content-center gap-2 px-3">
+                <div class="countdown-box">
+                    <span id="days">00</span>
+                    <small>ngày</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="hours">00</span>
+                    <small>giờ</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="minutes">00</span>
+                    <small>phút</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="seconds">00</span>
+                    <small>giây</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="family-section p-4 bg-white">
+            <div class="family-title-top text-center mb-4 scroll-animate" data-animate="fade-up">
+                Nhà Có Hỷ
+            </div>
+
+            <div class="family-card-wrap">
+                <div class="family-box mb-4 scroll-animate" data-animate="slide-left">
+                    <h4 class="family-side-title">NHÀ TRAI</h4>
+                    <p class="parent-name">Ông: Nguyễn Văn Thị</p>
+                    <p class="parent-name">Bà: Phạm Thị Hội</p>
+                    <p class="address-text">SN 83, Làng Yên Dân, Thôn Yên Thượng, Xã Thắng Lợi, Thanh Hóa</p>
+                </div>
+
+                <div class="family-box scroll-animate" data-animate="slide-right">
+                    <h4 class="family-side-title">NHÀ GÁI</h4>
+                    <p class="parent-name">Ông: Lê Đức Thế</p>
+                    <p class="parent-name">Bà: Nguyễn Thị Thu Hà</p>
+                    <p class="address-text">SN 15, Khu Dân Cư Mới, Thôn Cầu Quan, Xã Trung Chính, Thanh Hóa</p>
+                </div>
+            </div>
+
+            <div class="couple-love-section text-center mt-5 scroll-animate" data-animate="fade-up">
+                <p class="announcement">TRÂN TRỌNG BÁO TIN LỄ THÀNH HÔN CỦA</p>
+
+                <div class="couple-name-wrap">
+                    <h3 class="couple-name-accent">Văn Đạt</h3>
+                    <div class="love-divider">
+                        <span></span>
+                        <i class="fa-solid fa-heart"></i>
+                        <span></span>
+                    </div>
+                    <h3 class="couple-name-accent">Thanh Trúc</h3>
+                </div>
+
+                <div class="couple-image-frame mt-4 scroll-animate" data-animate="zoom-in">
+                    <img src="images/anh-phu.jpg" alt="Ảnh cưới phụ" class="img-fluid couple-image-custom">
+                </div>
+
+                <p class="sub-invite-text mt-4">
+                    HÂN HẠNH KÍNH MỜI BẠN ĐẾN THAM DỰ<br>
+                    CHUNG VUI CÙNG GIA ĐÌNH ❤️
+                </p>
+            </div>
+        </section>
+
+        <section class="events-section py-4 px-3">
+            <div class="section-title-container text-center mb-4 scroll-animate" data-animate="fade-up">
+                <span class="wedding-events-title">Sự Kiện Trọng Đại</span>
+                <div class="heart-line">
+                    <span class="line"></span>
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="custom-event-card mb-4 text-center scroll-animate" data-animate="slide-left">
+                <div class="card-decor-top">
+                    <i class="fa-solid fa-ring event-icon-top"></i>
+                </div>
+                <h3 class="event-card-title-new">LỄ THÀNH HÔN</h3>
+                <p class="event-side-tag">NHÀ TRAI</p>
+                <div class="event-time-box my-3">
+                    <p class="event-time-new">CHỦ NHẬT - 09:30</p>
+                    <p class="event-date-new">25 . 10 . 2026</p>
+                    <p class="lunar-date-new">Tức Ngày 16 tháng 09 năm Bính Ngọ</p>
+                </div>
+                <div class="event-location-box">
+                    <h4 class="event-location-new">
+                        <i class="fa-solid fa-house-chimney me-2 text-gold"></i>TẠI GIA ĐÌNH NHÀ TRAI
+                    </h4>
+                    <p class="event-address-new">SN 83, Làng Yên Dân, Thôn Yên Thượng, Xã Thắng Lợi, Thanh Hóa</p>
+                </div>
+                <a href="http://maps.google.com/?q=SN 83, Làng Yên Dân, Thôn Yên Thượng, Thắng Lợi, Thanh Hóa" target="_blank" class="btn-map-custom mt-3">
+                    <i class="fa-solid fa-location-dot me-2"></i>Xem chỉ đường
+                </a>
+            </div>
+
+            <div class="custom-event-card mb-4 text-center scroll-animate" data-animate="slide-right">
+                <div class="card-decor-top">
+                    <i class="fa-solid fa-wine-glass event-icon-top"></i>
+                </div>
+                <h3 class="event-card-title-new">LỄ NẠP TÀI</h3>
+                <p class="event-side-tag">NHÀ GÁI</p>
+                <div class="event-time-box my-3">
+                    <p class="event-time-new">THỨ TƯ - 09:05</p>
+                    <p class="event-date-new">21 . 10 . 2026</p>
+                    <p class="lunar-date-new">Tức Ngày 12 tháng 09 năm Bính Ngọ</p>
+                </div>
+                <div class="event-location-box">
+                    <h4 class="event-location-new">
+                        <i class="fa-solid fa-house-chimney me-2 text-gold"></i>TẠI GIA ĐÌNH NHÀ GÁI
+                    </h4>
+                    <p class="event-address-new">SN 15, Khu Dân Cư Mới, Thôn Cầu Quan, Xã Trung Chính, Thanh Hóa</p>
+                </div>
+                <a href="http://maps.google.com/?q=SN 15, Khu Dân Cư Mới, Thôn Cầu Quan, Trung Chính, Thanh Hóa" target="_blank" class="btn-map-custom mt-3">
+                    <i class="fa-solid fa-location-dot me-2"></i>Xem chỉ đường
+                </a>
+            </div>
+        </section>
+
+        <section class="gift-section py-4 text-center position-relative overflow-hidden scroll-animate" data-animate="zoom-in">
+            <div class="heart-bg-decor left-heart"><i class="fa-solid fa-heart animate-float"></i></div>
+            <div class="heart-bg-decor right-heart"><i class="fa-solid fa-heart animate-float-delayed"></i></div>
+
+            <div class="gift-box-clickable mx-auto" data-bs-toggle="modal" data-bs-target="#giftModal" style="cursor: pointer; max-width: 320px;">
+                <div class="gift-wrapper position-relative">
+                    <div class="custom-gift-box animate-pulse-gift">
+                        <div class="gift-lid"></div>
+                        <div class="gift-body">
+                            <div class="gift-bow"></div>
+                            <div class="gift-ribbon-v"></div>
+                        </div>
+                    </div>
+                    <span class="heart-pop-up"><i class="fa-solid fa-heart text-danger"></i></span>
+                </div>
+                <h4 class="gift-title mt-4 mb-2">Hộp Quà Mừng Cưới</h4>
+                <p class="gift-subtitle text-muted small px-3">Gửi những lời chúc tốt đẹp và sự yêu thương tới Cô Dâu & Chú Rể ❤️</p>
+                <div class="btn-open-gift mt-3 mx-auto">
+                    <span>Mở hộp quà ngay</span>
+                    <i class="fa-solid fa-wand-magic-sparkles ms-1"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="album-section py-4" style="background-color: #6e1618;">
+            <div class="album-text-title px-3 mb-3 scroll-animate" data-animate="fade-up">
+                <span class="big-title-album text-white">ALBUM</span>
+                <span class="of-text text-white-50">of</span>
+                <span class="big-title-album text-end text-white">LOVE</span>
+            </div>
+
+            <div class="main-preview-container px-3 position-relative scroll-animate" data-animate="zoom-in">
+                <img id="mainAlbumPreview" src="images/album1.jpg" alt="Preview ảnh" class="w-100 rounded shadow">
+                <button class="nav-btn prev-btn" onclick="changeSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="nav-btn next-btn" onclick="changeSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="thumbnail-row d-flex justify-content-center gap-2 mt-3 px-3 overflow-x-auto scroll-animate" data-animate="fade-up">
+                <img src="images/album1.jpg" class="thumb-img active-thumb" onclick="currentSlide(0)">
+                <img src="images/album2.jpg" class="thumb-img" onclick="currentSlide(1)">
+                <img src="images/album3.jpg" class="thumb-img" onclick="currentSlide(2)">
+                <img src="images/album4.jpg" class="thumb-img" onclick="currentSlide(3)">
+            </div>
+        </section>
+
+        <div class="music-toggle animate-bounce" id="musicToggle">
+            <i class="fa-solid fa-music"></i>
+        </div>
+    </div>
+
+    <!-- Modal Mừng Cưới -->
+    <div class="modal fade" id="giftModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center pt-0">
+                    <h5 class="modal-title mb-3 fw-bold" style="color: #6e1618;">
+                        MỪNG CƯỚI CÔ DÂU & CHÚ RỂ
+                    </h5>
+
+                    <div class="qr-container p-2 border rounded bg-light mb-3 mx-auto" style="max-width: 240px;">
+                        <img src="images/qr-chu-re.jpg" alt="Mã QR VietinBank Nguyễn Văn Đạt" class="img-fluid rounded w-100">
+                    </div>
+
+                    <div class="account-info p-3 rounded" style="background-color: #fff5f5; border: 1px dashed #6e1618;">
+                        <p class="mb-1 fw-semibold text-secondary small text-uppercase">
+                            VIETINBANK
+                        </p>
+                        <h4 id="stkNum" class="mb-1 fw-bold text-dark">
+                            104886320630
+                        </h4>
+                        <p class="mb-0 text-dark small">
+                            Chủ TK: <span class="fw-bold text-uppercase">NGUYEN VAN DAT</span>
+                        </p>
+                        <button class="copy-btn mt-3" onclick="copySTK()">
+                            <i class="fa-regular fa-copy me-1"></i>
+                            Sao chép số tài khoản
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="weddingMusic" loop playsinline>
+        <source src="musics/nhac-dam-cuoi.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,855 @@
+/* ==========================================
+   CSS CHỦ ĐẠO - THIỆP CƯỚI ĐIỆN TỬ
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Định hình giao diện bao bọc dạng màn hình điện thoại di động */
+.mobile-wrapper {
+    width: 100%;
+    max-width: 450px;
+    background-color: #fdfaf7;
+    min-height: 100vh;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+}
+
+/* ==========================================
+   1. MÀN HÌNH CHÀO MỪNG (HERO SECTION - PREMIUM UPGRADE)
+   ========================================== */
+.hero-section {
+    position: relative;
+    background-color: #fdfaf7;
+    overflow: hidden;
+}
+
+.hero-img-container {
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Lớp phủ chuyển màu mờ dần xuống dưới giúp phần chữ hòa nhập với nền */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(253,250,247,0) 70%, rgba(253,250,247,1) 100%);
+    z-index: 1;
+}
+
+/* Khung tên nghệ thuật dạng kính mờ (Glow Glassmorphism) */
+.hero-names-box-modern {
+    position: absolute;
+    top: 17px;
+    right: 12px;
+    width: 120px;
+    background: rgba(255,255,255,0.72);
+    padding: 8px 6px;
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    z-index: 5;
+}
+
+.wedding-badge {
+    font-size: 0.45rem;
+    letter-spacing: 1.5px;
+    color: #888;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.couple-names-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.script-font-premium {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.2rem;
+    color: #6e1618;
+    line-height: 1;
+    margin: 0;
+}
+
+/* Thanh phân cách tim tinh xảo */
+.heart-separator {
+    width: 60%;
+    margin: 2px 0;
+}
+
+.heart-separator .line-left,
+.heart-separator .line-right {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(110,22,24,0), rgba(110,22,24,0.4));
+}
+
+.heart-separator .line-right {
+    background: linear-gradient(to left, rgba(110,22,24,0), rgba(110,22,24,0.4));
+}
+
+.pulse-heart {
+    color: #cc2b33;
+    font-size: 0.55rem;
+    margin: 0 5px;
+    animation: heartBeatCustom 1.5s infinite;
+}
+
+/* Thẻ thông tin chi tiết (Modern Card) */
+.hero-info-card-modern {
+    background-color: #ffffff;
+    margin: -40px 24px 0 24px;
+    position: relative;
+    z-index: 5;
+    padding: 25px 20px;
+    box-shadow: 0 15px 35px rgba(110, 22, 24, 0.06);
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(110, 22, 24, 0.04);
+}
+
+.title-invite-modern {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #6e1618;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.divider-modern {
+    height: 1px;
+    background: linear-gradient(to right, rgba(110,22,24,0.1), rgba(110,22,24,0.6), rgba(110,22,24,0.1));
+    width: 50%;
+    margin: 12px auto;
+}
+
+.time-main-modern {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #666;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.date-main-modern {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #6e1618;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+/* ==========================================
+   2. ĐỒNG HỒ ĐẾM NGƯỢC
+   ========================================== */
+.countdown-title {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.countdown-box {
+    background-color: #6e1618;
+    color: white;
+    width: 75px;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+.countdown-box span {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.countdown-box small {
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+/* ==========================================
+   3. GIA ĐÌNH HAI BÊN
+   ========================================== */
+.family-title-top {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #6e1618;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.family-title-top::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #6e1618, transparent);
+    display: block;
+    margin: 8px auto 0 auto;
+}
+
+.family-card-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.family-box {
+    background: #fff;
+    border-radius: 18px;
+    padding: 18px 18px;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(110,22,24,0.06);
+    border: 1px solid rgba(110,22,24,0.08);
+    overflow: hidden;
+}
+
+.family-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 4px;
+    height: 70px;
+    background: linear-gradient(to bottom, #6e1618, #c94750);
+    border-radius: 20px;
+}
+
+.family-side-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #6e1618;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+.parent-name {
+    font-size: 0.92rem;
+    margin-bottom: 5px;
+    color: #333;
+    padding-left: 10px;
+}
+
+.address-text {
+    font-size: 0.82rem;
+    color: #777;
+    line-height: 1.5;
+    padding-left: 10px;
+    margin-top: 8px;
+}
+
+.announcement {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #444;
+}
+
+.couple-name-accent {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #6e1618;
+    margin-bottom: 0;
+}
+
+.sub-invite-text {
+    font-size: 0.82rem;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    color: #555;
+    font-weight: 600;
+}
+
+/* ==========================================
+   4. THẺ SỰ KIỆN NÂNG CẤP (ELEGANT & MODERN)
+   ========================================== */
+.events-section {
+    background-color: #fbf6f0;
+}
+
+.wedding-events-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #6e1618;
+    display: block;
+}
+
+.heart-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -5px;
+}
+
+.heart-line .line {
+    height: 1px;
+    width: 50px;
+    background-color: #6e1618;
+    opacity: 0.5;
+}
+
+.heart-line i {
+    color: #6e1618;
+    font-size: 0.8rem;
+}
+
+.custom-event-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(110, 22, 24, 0.1);
+    border-radius: 16px;
+    padding: 30px 20px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(110, 22, 24, 0.05);
+}
+
+.card-decor-top {
+    width: 50px;
+    height: 50px;
+    background-color: #6e1618;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -55px auto 15px auto;
+    border: 4px solid #fbf6f0;
+    box-shadow: 0 4px 10px rgba(110, 22, 24, 0.15);
+}
+
+.event-icon-top {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.event-card-title-new {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #6e1618;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.event-side-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #888;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.event-time-box {
+    background-color: #fff9f9;
+    border-top: 1px dashed rgba(110, 22, 24, 0.15);
+    border-bottom: 1px dashed rgba(110, 22, 24, 0.15);
+    padding: 12px 0;
+}
+
+.event-time-new {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 2px;
+}
+
+.event-date-new {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #6e1618;
+    margin-bottom: 2px;
+}
+
+.lunar-date-new {
+    font-size: 0.8rem;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.event-location-box {
+    margin-top: 15px;
+}
+
+.event-location-new {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.event-address-new {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.text-gold {
+    color: #bfa15f !important;
+}
+
+.btn-map-custom {
+    display: inline-flex;
+    align-items: center;
+    background-color: #6e1618;
+    color: #ffffff !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(110, 22, 24, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-map-custom:hover {
+    background-color: #8d2023;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(110, 22, 24, 0.3);
+}
+
+/* ==========================================
+   5. HỘP QUÀ MỪNG CƯỚI
+   ========================================== */
+.gift-section {
+    border-top: 1px rgba(110, 22, 24, 0.1) solid;
+}
+
+.gift-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #6e1618;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+.gift-subtitle {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.gift-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-gift-box {
+    width: 70px;
+    height: 65px;
+    background: #cc2b33; 
+    position: relative;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 10px 20px rgba(110, 22, 24, 0.2);
+}
+
+.gift-lid {
+    width: 78px;
+    height: 16px;
+    background: #e63942;
+    position: absolute;
+    top: -14px;
+    left: -4px;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+.gift-ribbon-v {
+    width: 14px;
+    height: 100%;
+    background: #ffcc00;
+    position: absolute;
+    top: 0;
+    left: 28px;
+}
+
+.gift-bow {
+    width: 24px;
+    height: 12px;
+    border: 4px solid #ffcc00;
+    border-radius: 50%;
+    position: absolute;
+    top: -24px;
+    left: 23px;
+    z-index: 1;
+}
+
+.gift-bow::after {
+    content: '';
+    width: 24px;
+    height: 12px;
+    border: 4px solid #ffcc00;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: -16px;
+}
+
+.btn-open-gift {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6e1618, #9c2427);
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(110, 22, 24, 0.3);
+    transition: all 0.3s ease;
+}
+
+.gift-box-clickable:hover .btn-open-gift {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #9c2427, #6e1618);
+    box-shadow: 0 6px 16px rgba(110, 22, 24, 0.4);
+}
+
+.heart-bg-decor {
+    position: absolute;
+    color: rgba(230, 57, 66, 0.2);
+    font-size: 1.2rem;
+}
+
+.left-heart { top: 20%; left: 10%; }
+.right-heart { bottom: 25%; right: 10%; }
+
+/* ==========================================
+   6. ALBUM HÌNH ẢNH
+   ========================================== */
+.album-text-title {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.big-title-album {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.of-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem;
+    margin-left: 60px;
+}
+
+.main-preview-container {
+    position: relative;
+}
+
+#mainAlbumPreview {
+    height: 420px;
+    object-fit: cover;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn { left: 25px; }
+.next-btn { right: 25px; }
+
+.thumbnail-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    padding: 0 16px;
+    overflow-x: auto;
+}
+
+.thumb-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.5;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.thumb-img.active-thumb {
+    opacity: 1;
+    border-color: #ffffff;
+}
+
+/* ==========================================
+   7. HIỆU ỨNG CHUYỂN ĐỘNG & GIAO DIỆN PHỤ
+   ========================================== */
+@keyframes heartBeatCustom {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.2); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.2); }
+    70% { transform: scale(1); }
+}
+
+@keyframes fadeInUpCustom {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate-fade-up {
+    animation: fadeInUpCustom 1s cubic-bezier(0.25, 1, 0.5, 1) both;
+}
+
+.delay-1 {
+    animation-delay: 0.3s;
+}
+
+@keyframes pulseGift {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.08) rotate(-3deg); }
+    40% { transform: scale(1.08) rotate(3deg); }
+    50% { transform: scale(1.08) rotate(-3deg); }
+    60% { transform: scale(1.08) rotate(3deg); }
+    70% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+
+.animate-pulse-gift {
+    animation: pulseGift 2.5s infinite ease-in-out;
+}
+
+@keyframes heartPop {
+    0% { transform: translateY(10px) scale(0.5); opacity: 0; }
+    50% { opacity: 0.8; }
+    100% { transform: translateY(-40px) scale(1.2); opacity: 0; }
+}
+
+.heart-pop-up {
+    position: absolute;
+    top: 10px;
+    font-size: 1rem;
+    animation: heartPop 2s infinite ease-in-out;
+    z-index: 3;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-12px) rotate(15deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float { animation: float 3s infinite ease-in-out; }
+.animate-float-delayed { animation: float 3.5s infinite ease-in-out; animation-delay: 0.7s; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.music-toggle {
+    position: fixed;
+    bottom: calc(20px + env(safe-area-inset-bottom));
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #6e1618;
+    color: white;
+    border-radius: 50%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.intro-loader {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(to bottom, #6e1618, #2c090a);
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    transition: all 0.8s ease;
+}
+
+.intro-loader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.intro-sub {
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.intro-title {
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.open-invite-btn {
+    border: none;
+    background: white;
+    color: #6e1618;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.open-invite-btn:hover {
+    transform: scale(1.05);
+}
+
+.copy-btn {
+    border: none;
+    background: #6e1618;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.thumbnail-row::-webkit-scrollbar {
+    display: none;
+}
+
+.thumbnail-row {
+    scrollbar-width: none;
+}
+
+.love-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 10px 0;
+}
+
+.love-divider span {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(110,22,24,0.5), transparent);
+}
+
+.love-divider i {
+    color: #d84b57;
+    font-size: 0.8rem;
+    animation: heartBeatCustom 1.5s infinite;
+}
+
+.couple-image-frame {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    padding: 6px;
+    background: white;
+}
+
+.couple-image-custom {
+    border-radius: 18px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.couple-image-custom:hover {
+    transform: scale(1.02);
+}
+
+/* ==========================================
+   8. HIỆU ỨNG CUỘN TRANG (ON-SCROLL ANIMATIONS)
+   ========================================== */
+.scroll-animate {
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform, opacity;
+}
+
+.scroll-animate[data-animate="fade-up"] {
+    transform: translate3d(0, 40px, 0);
+}
+
+.scroll-animate[data-animate="slide-left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+.scroll-animate[data-animate="slide-right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+.scroll-animate[data-animate="zoom-in"] {
+    transform: scale3d(0.9, 0.9, 1);
+}
+
+.scroll-animate.animated {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+}
