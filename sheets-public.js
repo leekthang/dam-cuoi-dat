@@ -1,7 +1,7 @@
 /* Kết nối biểu mẫu thiệp cưới với Google Sheets qua Apps Script Web App. */
 // Dán URL Web App kết thúc bằng /exec vào biến dưới đây sau khi triển khai Apps Script.
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbxqp1RYWjGkCurYenZnTCZdMJqh4mTkc9AgXBidqgEwqbU0GEB11pQjSQThyM1Sg2jj/exec";
+  "https://script.google.com/macros/s/AKfycbwOXnQWfsxFLhkzS7gGBkkRP8YprC_DH6LoJI--Df6rrIX2Uv-TkP3-Wbt7Wi2b3PnqSQ/exec";
 const rsvpForm = document.getElementById("rsvpForm");
 const wishForm = document.getElementById("wishForm");
 const publishedWishes = document.getElementById("publishedWishes");
